@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Налоговый калькулятор</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Налоговый калькулятор</h1>
+        <form id="tax-form">
+            <div class="form-group">
+                <label for="income">Доход:</label>
+                <input type="number" id="income" placeholder="Введите доход" required>
+            </div>
+            <button type="submit">Рассчитать</button>
+        </form>
+        <div id="results">
+            <p>Налоговая ставка: <span id="tax-rate">0%</span></p>
+            <p>Сумма налога: <span id="tax-amount">$0.00</span></p>
+        </div>
+    </div>
+    <script src="scripts/script_with_back.js"></script>
+</body>
+</html>
+
+
