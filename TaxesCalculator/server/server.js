@@ -16,12 +16,16 @@ app.post('/calculate-tax', (req, res) => {
     let taxRate = 0;
     let taxAmount = 0;
 
-    if (income <= 5000) {
-        taxRate = 5;
-    } else if (income <= 15000) {
-        taxRate = 10;
-    } else {
-        taxRate = 15;
+    switch (true) {
+        case (income <= 5000):
+            taxRate = 5;
+            break;
+        case (income <= 15000):
+            taxRate = 10;
+            break;
+        default:
+            taxRate = 15;
+            break;
     }
 
     taxAmount = (income * taxRate) / 100;
