@@ -1,2 +1,4 @@
 # TaxesCalculator
-Start using : node server/server.js
+Start using : 
+1. Clone repo
+2. node server/server.js
